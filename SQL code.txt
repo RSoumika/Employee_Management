@@ -1,0 +1,15 @@
+CREATE DATABASE employee_db;
+
+USE employee_db;
+
+CREATE TABLE employees (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100),
+    department VARCHAR(50),
+    designation VARCHAR(50),
+    salary DOUBLE,
+    join_date DATE,
+    status VARCHAR(10) DEFAULT 'Active'
+);
+
+ 
